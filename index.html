@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mindset 3 Unit 8 – Speaking</title>
+<style>
+:root{--navy:#1b2a41;--navy2:#28405f;--sand:#f6f3ea;--gold:#c9a227;--good:#1e7d45;--bad:#b3261e;--muted:#6b7280;}
+*{box-sizing:border-box;}
+body{margin:0;font-family:'Segoe UI',Arial,sans-serif;background:var(--sand);color:#222;line-height:1.55;}
+header{background:var(--navy);color:#fff;padding:28px 20px;text-align:center;}
+header h1{margin:0 0 6px;font-size:1.8em;}
+header p{margin:0;color:#d7dde6;}
+.container{max-width:880px;margin:0 auto;padding:24px 16px 80px;}
+.card{background:#fff;border-radius:12px;padding:22px 24px;margin-bottom:22px;box-shadow:0 2px 8px rgba(0,0,0,.06);}
+.section-title{color:var(--navy);margin:34px 0 14px;font-size:1.5em;text-align:center;}
+.ex-title{color:var(--navy);border-bottom:3px solid var(--gold);display:inline-block;padding-bottom:4px;margin:0 0 10px;font-size:1.25em;}
+.ex-instructions{color:#444;margin:0 0 14px;}
+.wordbank{background:#eef2fa;border:1px dashed #9fb3d6;border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:.95em;text-align:center;line-height:1.9;}
+.infobox{background:#f3ecd2;border:2px solid var(--gold);border-radius:10px;padding:12px 16px;margin-bottom:16px;font-size:.95em;}
+.infobox ul{margin:6px 0 6px 18px;padding:0;}
+.q{margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid #eee;}
+.q:last-child{border-bottom:none;}
+.q-num{font-weight:700;color:var(--navy2);margin-right:4px;}
+.example-tag{font-size:.85em;color:var(--muted);font-style:italic;}
+select,.blank-input,textarea{padding:6px 8px;border:1px solid #c6cedb;border-radius:6px;font-size:.96em;font-family:inherit;}
+.blank-input{width:200px;}
+select.wide{max-width:100%;}
+.opts label{display:block;margin:4px 0 4px 6px;cursor:pointer;}
+.opts input{margin-right:8px;}
+.feedback{margin-left:6px;font-weight:600;}
+.feedback.correct{color:var(--good);}
+.feedback.wrong{color:var(--bad);}
+.correct-answer{font-weight:500;font-style:italic;}
+.dialogue{background:#f8f9fb;border:1px solid #e1e6ee;border-radius:8px;padding:10px 14px;margin:6px 0 8px;}
+.sent{background:#eef2fa;border-radius:8px;padding:8px 12px;margin:6px 0;display:flex;gap:10px;align-items:flex-start;flex-wrap:wrap;}
+.sent span.t{flex:1 1 380px;}
+.sent select{flex:0 0 auto;}
+.submit-bar{position:sticky;bottom:0;background:var(--sand);padding:14px 0;text-align:center;border-top:1px solid #ddd;}
+button{background:var(--navy);color:#fff;border:none;padding:12px 26px;border-radius:30px;font-size:1em;cursor:pointer;margin:0 6px;}
+button.secondary{background:#fff;color:var(--navy);border:1px solid var(--navy);}
+button.small{padding:7px 16px;font-size:.9em;margin:6px 6px 6px 0;}
+.score-card{display:none;background:var(--navy);color:#fff;border-radius:12px;padding:20px;text-align:center;margin-bottom:22px;}
+.score-card h2{margin:0 0 6px;}
+.score-num{font-size:2em;font-weight:700;color:var(--gold);}
+.tag{display:inline-block;background:#e8eefc;color:var(--navy2);border-radius:20px;padding:2px 12px;margin:3px 4px 3px 0;font-size:.9em;}
+.self{border:2px dashed var(--gold);}
+.self textarea{width:100%;min-height:80px;margin-top:6px;}
+.sample{display:none;background:#f1f8f3;border-left:4px solid var(--good);border-radius:6px;padding:10px 14px;margin-top:8px;}
+.note{font-size:.9em;color:var(--muted);font-style:italic;}
+</style>
+</head>
+<body>
+<header><h1>Mindset 3 Unit 8 – Speaking</h1><p>Culture: IELTS Speaking Parts 1 and 3</p></header>
+<div class="container">
+<div id="scoreCardTop" class="score-card"><h2>Your Score</h2><div id="scoreTextTop" class="score-num"></div><p id="scoreMsgTop"></p></div>
+
+<div class="card"><h2 class="ex-title">Exercise 1</h2>
+<p class="ex-instructions">Read the information. Then look at the questions. Do they come from IELTS Speaking Part 1 or Part 3? Choose the correct part for each question.</p>
+<div class="infobox">In IELTS Speaking <b>Part 1</b>, most of the questions will be on topics you are familiar with and can talk about from personal experience. In <b>Part 3</b>, you will be expected to expand your answers and speak in more general terms.</div>
+<div id="s1"></div></div>
+
+<div class="card"><h2 class="ex-title">Exercise 2</h2>
+<p class="ex-instructions">Watch the video of a native English speaker answering four IELTS Speaking questions (Video 8.1). Put the questions that the speaker answers in the correct order (1–4).</p>
+<p><a href="https://youtu.be/DbyexS5eyYw" target="_blank" rel="noopener"><button class="small" type="button">▶ Watch Video 8.1</button></a> <span class="note">(opens in a new tab)</span></p>
+<div id="s2"></div></div>
+
+<div class="card"><h2 class="ex-title">Exercise 3</h2>
+<p class="ex-instructions">Read the responses to the IELTS Speaking Part 3 question: <i>Do you think extended families will become more or less common in the future?</i> Choose the correct examiner comment for each response.</p>
+<div id="s3"></div></div>
+
+<div class="card"><h2 class="ex-title">Exercise 4</h2>
+<p class="ex-instructions">Read the information. Then read the IELTS Speaking Part 3 questions. Put the sentences in the correct order (1st, 2nd, 3rd) to complete the responses.</p>
+<div class="infobox">A useful way of answering IELTS Speaking Part 3 questions is to structure your response in the following way:
+<ul><li>Make a statement.</li><li>Explain your answer.</li><li>Support your statement.</li></ul></div>
+<div id="s4"></div></div>
+
+<div class="card"><h2 class="ex-title">Exercise 5</h2>
+<p class="ex-instructions">Read the information. Then complete the responses to IELTS Speaking Part 3 questions with the phrases in the box.</p>
+<div class="infobox">Indefinite pronouns with a defining relative clause (e.g. <i>anyone who</i> and <i>something that</i>) are a good way of making general statements. They can be useful in IELTS Speaking Part 3.</div>
+<div class="wordbank" id="s5bank"></div>
+<div id="s5"></div></div>
+
+<div class="card self"><h2 class="ex-title">Exercise 6 <span class="example-tag">(self-study – not scored)</span></h2>
+<p class="ex-instructions">You are going to practise some IELTS Speaking Part 1 questions. Use the useful phrases to help you, say your answer aloud and/or write notes below. Your answers should be true for you!</p>
+<div id="s6"></div></div>
+
+<div class="submit-bar"><button onclick="gradeAll()">✅ Check my answers</button><button class="secondary" onclick="resetAll()">↺ Reset</button></div>
+<div id="scoreCard" class="score-card"><h2>Your Score</h2><div id="scoreText" class="score-num"></div><p id="scoreMsg"></p></div>
+</div>
+<script>
+function mark(id,ok,ans){const el=document.getElementById(id);if(!el)return;
+  if(ok){el.innerHTML="✔";el.className="feedback correct";}
+  else{el.innerHTML=`✘ <span class="correct-answer">(answer: ${ans})</span>`;el.className="feedback wrong";}}
+function getRadio(n){const r=document.querySelector(`input[name="${n}"]:checked`);return r?r.value:null;}
+function selectHTML(id,opts,cls){return `<select id="${id}"${cls?` class="${cls}"`:''}><option value="">--</option>${opts.map(o=>`<option value="${o}">${o}</option>`).join('')}</select><span class="feedback" id="${id}-fb"></span>`;}
+function inputHTML(id,w){return `<input class="blank-input" id="${id}" style="width:${w||120}px" autocomplete="off"><span class="feedback" id="${id}-fb"></span>`;}
+function radioGroup(name,opts){return `<div class="opts">${opts.map((o,i)=>`<label><input type="radio" name="${name}" value="${i}"> ${o}</label>`).join('')}</div><span class="feedback" id="${name}-fb"></span>`;}
+const val=id=>document.getElementById(id).value;
+const norm=s=>(s||"").toString().toLowerCase().replace(/[’‘]/g,"'").replace(/\s+/g," ").trim();
+function finish(scored,total,what){
+  document.querySelectorAll('input.blank-input, input[type=radio], select').forEach(e=>e.disabled=true);
+  const pct=Math.round(scored/total*100);
+  const msg=pct>=90?"Excellent work! 🎉":pct>=70?"Good job — review the ones you missed.":pct>=50?"Nice try — go back over the "+what+" and try again.":"Keep practicing — review the "+what+" above.";
+  ['','Top'].forEach(s=>{document.getElementById('scoreCard'+s).style.display='block';
+    document.getElementById('scoreText'+s).textContent=`${scored} / ${total}`;
+    document.getElementById('scoreMsg'+s).textContent=`${pct}% correct. ${msg}`;});
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+function resetAll(){location.reload();}
+
+const KEY={
+  s1:["Part 1","Part 1","Part 3","Part 3","Part 1","Part 3","Part 3","Part 1"],
+  s2:["4","2","1","3"],
+  s3:[2,3,4,0,1,5],
+  s4:[["1","3","2"],["3","1","2"],["2","1","3"],["3","1","2"]],
+  s5:["Everyone who","I am someone who","Differences between cultures are something that","Somewhere that","I don't know anybody who","Something that"]
+};
+/* Ex1 */
+const q1=["What is the most important festival in your country?","Do people usually have meals together in your culture?","How important do you think it is for a society to keep its traditions?","Do you think the government should fund museums and art galleries?","Which other foreign language would you like to learn?","Do you think traditions that we have today will survive in the future?","Do you think that we should maintain old buildings and monuments?","Are there any traditions that you especially enjoy?"];
+document.getElementById('s1').innerHTML=q1.map((t,i)=>`<div class="q"><span class="q-num">${i+1}.</span> ${t}<br>${selectHTML('s1-'+i,["Part 1","Part 3"])}</div>`).join('');
+/* Ex2 */
+const q2=["Can you remember a place that you visited that made a big impression on you?","Is there anywhere you would especially like to visit?","What advice would you give to visitors to other countries?","What do visitors to your country dislike?"];
+document.getElementById('s2').innerHTML=q2.map((t,i)=>`<div class="q">${t}<br>Order: ${selectHTML('s2-'+i,["1","2","3","4"])}</div>`).join('');
+/* Ex3 */
+const C3=["There are too many mistakes.","The response is off-topic.","The response is too short.","The student needs to use more cohesive devices.","The vocabulary is too basic.","This is a good response."];
+const r3=["No, I think that people will live either separately or in nuclear families in the future.",
+"I think that fewer people will be living in extended families. More and more young people are moving to different cities or countries. They leave their families behind. They forget about the extended family. The older people don't expect to be looked after.",
+"I think that people won't live in big families with grandparents and uncles and aunts in the future. They will live with their small family – husband, wife, son and daughter – or they will decide to live alone because people like to be free, they don't like to live with their big family. It will be less common, for sure.",
+"I am thinking that extended family is critically for the most people, it is good people has grandparents who can look at the children when they are busy and who can rely on younger generation for help in their old age.",
+"For me, the extended family is important. I really like spending time with my grandparents. For instance, I like the fact that I can go to them for support and that they can rely on me for help when they are in need.",
+"In my opinion, at least in my society, the extended family is really important and, if anything, I think that it will become more common in the future. Firstly, our culture hasn't changed as much as perhaps in other countries, so for us at least, the idea of an extended family is still very common, and I can't see people wanting it to change. Secondly, due to the way the economy is, people cannot afford the high prices of accommodation, so they will rely on their parents for longer, and the older generations will expect their support in return."];
+document.getElementById('s3').innerHTML=r3.map((t,i)=>`<div class="q"><span class="q-num">${i+1}.</span> <div class="dialogue">${t}</div>${radioGroup('s3-'+i,C3)}</div>`).join('');
+/* Ex4 (sentences shown in scrambled order) */
+const q4=[
+ {q:"How should tourists behave when they are in a different country?",s:["I think that people should behave with respect for the local traditions and culture when they are in a different country.","For me, it is really annoying when tourists visit the ballet in my country and are dressed casually. For us, it is important to be dressed smartly, and I think that they should follow these rules like I do when I visit another country.","For example, I think that they should do some research on the place that they are going to and see how they should behave in certain circumstances."]},
+ {q:"Why do so many people enjoy participating in national celebrations?",s:["The reason I believe this is that if you take my country, people are very keen to participate in Independence Day, when there are a lot of concerts, parties and other festivities, but if it is something more sombre like a memorial day, fewer people attend.","In my opinion, taking part in national celebrations helps people feel part of society and allows them to feel proud of the nation, and of course the celebrations are quite often a lot of fun.","That said, I think that the key thing is that people are enjoying themselves, and it doesn't matter to them if it is to celebrate the accomplishments of the nation or something that is personal to them or their families."]},
+ {q:"Do you think that we should maintain old buildings and monuments?",s:["What's more, as well as providing a source of national pride and interest for the public, historic buildings help to attract tourists, who want to visit these attractions and are willing to pay good money to visit them.","I think that it could be argued that the government should be made to pay for the upkeep of old buildings and monuments, as they are part of the country's culture and heritage.","I suppose that it's in everybody's interests for old buildings to be preserved from a historical, cultural and economic perspective, and as the government raises taxes from the public, it should be down to the government to fund these projects."]},
+ {q:"Do you think that the traditions that we have today will survive into the future?",s:["Younger generations have fully embraced the possibilities of moving away from their traditional homes, communicating with people from other countries and participating in a global economy.","I really don't think that traditions will be of any importance to future generations. Most of the old traditions and customs have already been forgotten, and the development of technology means that people are becoming less and less interested in the past.","We can see that improvements in technology have led to people abandoning old working practices, and this gives them fewer ties to the past."]}];
+document.getElementById('s4').innerHTML=q4.map((x,i)=>`<div class="q"><span class="q-num">${i+1}.</span> <b>${x.q}</b>${x.s.map((t,k)=>`<div class="sent"><span class="t">${t}</span>${selectHTML(`s4-${i}-${k}`,["1","2","3"])}</div>`).join('')}</div>`).join('');
+/* Ex5 */
+const B5=["Differences between cultures are something that","Everyone who","I am someone who","I don't know anybody who","Something that","Somewhere that"];
+document.getElementById('s5bank').innerHTML=B5.join(' &nbsp; | &nbsp; ');
+const t5=["___ visits another country should be respectful of the local culture.","___ firmly believes that the extended family is important and will remain so. That's my view, anyway.","___ should be celebrated, and individual cultures should do their best to maintain their traditions.","___ still maintains the old traditions of our culture is the northern region of my country.","___ would argue that we aren't all responsible for looking after old buildings and monuments.","___ surprises me is that the expat community in my city doesn't mix at all with the local people and hasn't bothered to learn our language."];
+document.getElementById('s5').innerHTML=t5.map((t,i)=>`<div class="q"><span class="q-num">${i+1}.</span> ${t.replace('___',selectHTML('s5-'+i,B5,'wide'))}</div>`).join('');
+/* Ex6 self-study */
+const p6=[
+ {q:"Can you tell me where you're from?",c:["be born and raised in","a medium-sized city","in the north / south of my country","be proud of"],a:"I'm from a medium-sized city in the north of my country. I was born and raised there, and my whole family still lives in the same area. It's quite a lively place with a lot of history, and I'm really proud of where I come from."},
+ {q:"Do you live in a city or in the countryside?",c:["live in the city centre","within walking distance of","a busy / quiet area","a lot to do"],a:"I live in a city, in an apartment quite close to the centre. It's a very busy area, but it's convenient because my school and the shops are within walking distance. I think the countryside would be a bit boring for me because there isn't a lot to do there."},
+ {q:"What do you like about living there?",c:["a wide range of","public transport","a friendly atmosphere","easy access to"],a:"What I like most is that there's a wide range of things to do, such as cafés, parks and museums. The public transport is also good, so I have easy access to almost everywhere I need to go. On top of that, the people in my neighbourhood are friendly, which creates a nice atmosphere."},
+ {q:"Would you like to move somewhere else in the future?",c:["move abroad","broaden my horizons","adapt to a new culture","a better job"],a:"Yes, I think I'd like to move abroad for a few years after I finish school. It would be a great chance to broaden my horizons and learn about a different culture. I'd probably find it hard to adapt at first, but I'd like to try, and then I'd come back home."},
+ {q:"Tell me about the most popular festival in your country.",c:["celebrate a festival","a public holiday","traditional customs","family gatherings"],a:"The most popular festival in my country is probably the Lunar New Year. It's a public holiday, so most people have a few days off work and school. Families get together, clean their homes and follow traditional customs to welcome good luck for the new year."},
+ {q:"What special food and activities are connected with this festival?",c:["traditional dishes","give lucky money","watch fireworks","family reunion"],a:"There are lots of traditional dishes that we only eat at this time of year, and my grandmother always spends days preparing them. Children usually receive lucky money from their relatives, which they love. In the evening, many people go out to watch the fireworks in the city centre."},
+ {q:"What do you enjoy most about it?",c:["spend quality time with","a festive atmosphere","look forward to","take a break from"],a:"What I enjoy most is spending quality time with my relatives, because we're all so busy for the rest of the year. I also love the festive atmosphere on the streets, with colourful decorations everywhere. It's something I look forward to every year."},
+ {q:"Are festivals important in your country?",c:["keep traditions alive","bring people together","a sense of community","pass down customs"],a:"Yes, I think festivals are very important in my country. They help to keep traditions alive and let older people pass down customs to younger generations. They also bring people together, so everyone feels a sense of community."}];
+document.getElementById('s6').innerHTML=p6.map((x,i)=>`<div class="q"><span class="q-num">${i+1}.</span> <b>${x.q}</b><div>${x.c.map(c=>`<span class="tag">${c}</span>`).join('')}</div><textarea placeholder="Write your notes or answer here (optional)…"></textarea></div>`).join('');
+
+function gradeAll(){
+  let total=0,scored=0;const add=ok=>{total++;if(ok)scored++;};
+  KEY.s1.forEach((a,i)=>{const ok=val('s1-'+i)===a;add(ok);mark(`s1-${i}-fb`,ok,a);});
+  KEY.s2.forEach((a,i)=>{const ok=val('s2-'+i)===a;add(ok);mark(`s2-${i}-fb`,ok,a);});
+  KEY.s3.forEach((a,i)=>{const ok=getRadio('s3-'+i)===String(a);add(ok);mark(`s3-${i}-fb`,ok,C3[a]);});
+  KEY.s4.forEach((row,i)=>row.forEach((a,k)=>{const ok=val(`s4-${i}-${k}`)===a;add(ok);mark(`s4-${i}-${k}-fb`,ok,a);}));
+  KEY.s5.forEach((a,i)=>{const ok=val('s5-'+i)===a;add(ok);mark(`s5-${i}-fb`,ok,a);});
+  finish(scored,total,"questions");
+}
+</script>
+</body></html>
